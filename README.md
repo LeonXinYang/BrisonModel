@@ -1,7 +1,6 @@
-# Brinson-Model
+# 业绩归因模型：Brinson-Model
 
-一、简介
-------
+#介绍：
 Brison模型分为BF模型和BHB模型。
 其中BF模型最早发布于1985年，由Brison 和 Fachler 的论文"Measuring Non-US Equity Portfolio Performance" 提出。 BHB模型则最早发布于1986年，由Brison，Hood，Beebower于1986年刊登于金融分析家杂志《Financial Analysts Journal》
 的论文"Determinantes of Portfolio Performance"提出的归因模型。
@@ -20,7 +19,7 @@ Brison模型分为BF模型和BHB模型。
 
 API接口：AKShare
 
-二.模型
+公式定理推导：
 ------
 
 
@@ -28,7 +27,7 @@ API接口：AKShare
 ![](Pic/IMG_0629.JPG)
 
 
-三.核心代码说明
+文件说明：
 ------
 1.select_the_fund函数：
 

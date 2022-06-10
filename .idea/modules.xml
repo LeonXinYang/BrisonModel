@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pythonJoinQuant.iml" filepath="$PROJECT_DIR$/.idea/pythonJoinQuant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BrisonModel.iml" filepath="$PROJECT_DIR$/.idea/BrisonModel.iml" />
     </modules>
   </component>
 </project>
