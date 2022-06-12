@@ -46,8 +46,8 @@ def select_the_fund(fund_num: str,time: str,startdate: str, enddate: str) -> pd.
 
     fund_portfolio_hold_em_df = ak.fund_portfolio_hold_em(symbol=fund_num, date=time)
     sw_index_daily_df = ak.sw_index_daily(symbol=benchmark[0][0],start_date=startdate, end_date=enddate)
-    stock_zh_index_hist_csindex_df = ak.stock_zh_index_hist_csindex(symbol=benchmark[1][0], start_date=startdate, end_date=enddate)
-
+    #stock_zh_index_hist_csindex_df = ak.stock_zh_index_hist_csindex(symbol=benchmark[1][0], start_date=startdate, end_date=enddate)
+    stock_zh_index_hist_csindex_df = ak.index_zh_a_hist(symbol='000012', period="monthly", start_date=startdate, end_date=enddate)
     index_zh_a_hist_df = ak.index_zh_a_hist(symbol="000985",period = "monthly",start_date=startdate,end_date =enddate)
 
     #Step1: The benchmark return rate
@@ -152,7 +152,7 @@ def BHB_Model_Analysis(df_output:pd.DataFrame,fund_num: str) -> pd.DataFrame:
     print(output_df)
     if 'BHB-Output' not in os.listdir():
         os.makedirs("BHB-Output")
-    df_output.to_csv("BHB-Output/" + fund_num + "-Decomposition.csv")
+    output_df.to_csv("BHB-Output/" + fund_num + "-BHBresult.csv")
     return output_df
 
 def BF_Model_Analysis(df_output:pd.DataFrame,fund_num: str) -> pd.DataFrame:
@@ -191,7 +191,7 @@ def BF_Model_Analysis(df_output:pd.DataFrame,fund_num: str) -> pd.DataFrame:
     print(output_df)
     if 'BF-Output' not in os.listdir():
         os.makedirs("BF-Output")
-    df_output.to_csv("BF-Output/" + fund_num + "-Decomposition.csv")
+    output_df.to_csv("BF-Output/" + fund_num + "-BF_result.csv")
     return output_df
 
 

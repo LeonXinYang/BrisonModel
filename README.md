@@ -1,6 +1,8 @@
-# 业绩归因模型：Brinson-Model
+业绩归因模型：Brinson-Model
+------
 
-#介绍：
+介绍：
+------
 Brison模型分为BF模型和BHB模型。
 其中BF模型最早发布于1985年，由Brison 和 Fachler 的论文"Measuring Non-US Equity Portfolio Performance" 提出。 BHB模型则最早发布于1986年，由Brison，Hood，Beebower于1986年刊登于金融分析家杂志《Financial Analysts Journal》
 的论文"Determinantes of Portfolio Performance"提出的归因模型。
@@ -23,7 +25,8 @@ API接口：AKShare
 ------
 
 
-### BHB/BF模型 
+BHB/BF模型:
+------
 ![](Pic/IMG_0629.JPG)
 
 
@@ -43,3 +46,19 @@ API接口：AKShare
 3.BF_Model_Analysis函数：
 
 计算所有单期截面的归因结果，通过调用BF_Model_Analysis函数进行计算。应注意，BF和BHB模型得出的结论应一致。
+
+输出结果：
+------
+以长信军工量化混合 002983 2021年第4季度业绩 为例：
+
+业绩分解：
+
+         行业   组合权重  基准权重  组合收益  基准收益
+    0  军工行业  0.6992   0.6  0.252834  0.163853
+    1  其他行业  0.2360   0.0  0.226698  0.043040
+    2  货币基金  0.0648   0.4  0.012495  0.012495
+
+业绩归因：
+
+        配置效应    选股效应   交叉效应    误差
+    0  0.022947  0.105559  0.05217  0.014515
